@@ -34,6 +34,7 @@ RUN apt-get update -y \
       -e '/Listen 443$/i \ \ \ \ NameVirtualHost *:443' \
       /etc/apache2/ports.conf \
  && mkdir /var/www/htdocs \
+ && a2enmod cgid \
  && a2enmod ssl \
  && a2dissite 000-default \
  && a2ensite localhost \
