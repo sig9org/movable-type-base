@@ -26,6 +26,7 @@ RUN apt-get update -y \
       XML::SAX::ExpatXS \
       XML::LibXML::SAX \
       Archive::Zip \
+      Web::Scraper \
  && sed -i \
       -e 's/ServerTokens OS/ServerTokens ProductOnly/g' \
       -e 's/ServerSignature On/ServerSignature Off/g' \
