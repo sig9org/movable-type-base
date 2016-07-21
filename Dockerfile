@@ -23,10 +23,13 @@ RUN apt-get update -y \
       Imager \
       IPC::Run \
       Crypt::DSA \
+      Crypt::SSLeay \
       XML::SAX::ExpatXS \
       XML::LibXML::SAX \
       Archive::Zip \
       Web::Scraper \
+      Net::SMTP::SSL \
+      Net::SMTP::TLS \
  && sed -i \
       -e 's/ServerTokens OS/ServerTokens ProductOnly/g' \
       -e 's/ServerSignature On/ServerSignature Off/g' \
